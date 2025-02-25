@@ -75,6 +75,20 @@ document.addEventListener("DOMContentLoaded", function () {
     mouse.y = event.clientY - rect.top;
   });
 
+  // Update the touch position when it enters the canvas
+  canvas.addEventListener("touchmove", (event) => {
+    const rect = canvas.getBoundingClientRect();
+    mouse.x = event.touches[0].clientX - rect.left;
+    mouse.y = event.touches[0].clientY - rect.top;
+    // event.preventDefault();
+  });
+  //Update the touch position when it enters the canvas
+  canvas.addEventListener("touchstart", (event) => {
+    const rect = canvas.getBoundingClientRect();
+    mouse.x = event.touches[0].clientX - rect.left;
+    mouse.y = event.touches[0].clientY - rect.top;
+  });
+
   // Resize canvas on window resize
   window.addEventListener("resize", () => {
     width = canvas.width = window.innerWidth;
