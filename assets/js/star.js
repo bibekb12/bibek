@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ctx.moveTo(star.x, star.y);
         ctx.lineTo(mouse.x, mouse.y);
         ctx.strokeStyle = `rgba(255, 255, 255, ${1 - distance / maxDistance})`;
-        ctx.lineWidth = 1.5; // Make the lines a bit stronger
+        ctx.lineWidth = 2; // Make the lines a bit stronger
         ctx.stroke();
       }
     });
@@ -63,6 +63,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Update mouse position
   canvas.addEventListener("mousemove", (event) => {
+    const rect = canvas.getBoundingClientRect();
+    mouse.x = event.clientX - rect.left;
+    mouse.y = event.clientY - rect.top;
+  });
+
+  // Update mouse position when it enters the canvas
+  canvas.addEventListener("mouseenter", (event) => {
     const rect = canvas.getBoundingClientRect();
     mouse.x = event.clientX - rect.left;
     mouse.y = event.clientY - rect.top;
