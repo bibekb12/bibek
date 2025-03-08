@@ -1073,15 +1073,9 @@ section {
 }
 
 
-.download
- .info .social-links a:hover {
-  background: #149ddd;
-  color: #fff;
-}
 
-.contact .info .email:hover i,
-.contact .info .address:hover i,
-.contact .info .phone:hover i {
+.resumedownload:hover i,
+.cvdownload:hover i {
   background: #149ddd;
   color: #fff;
 }
