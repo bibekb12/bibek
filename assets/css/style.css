@@ -1073,7 +1073,8 @@ section {
 }
 
 
-.contact .info .social-links a:hover {
+.download
+ .info .social-links a:hover {
   background: #149ddd;
   color: #fff;
 }
