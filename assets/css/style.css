@@ -1039,7 +1039,6 @@ section {
   }
 }
 
-
 /*--------------------------------------------------------------
 # Download
 --------------------------------------------------------------*/
@@ -1083,8 +1082,6 @@ section {
   color: #173b6c;
 }
 
-
-
 .resumedownload:hover i,
 .cvdownload:hover i {
   background: #149ddd;
@@ -1094,3 +1091,8 @@ section {
   0% {
     transform: rotate(0deg);
   }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
