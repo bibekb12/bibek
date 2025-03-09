@@ -1096,3 +1096,57 @@ section {
     transform: rotate(360deg);
   }
 }
+
+/* Existing styles... */
+
+/* Responsive styles for screens 1280x720 and greater */
+@media (min-width: 1280px) {
+  body {
+    font-size: 18px;
+  }
+
+  #header {
+    width: 300px;
+  }
+
+  .profile img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .hero-container {
+    padding: 100px 0;
+  }
+
+  .section-title h2 {
+    font-size: 36px;
+  }
+
+  .section-title p {
+    font-size: 18px;
+  }
+
+  .resume-item h4 {
+    font-size: 24px;
+  }
+
+  .resume-item h5 {
+    font-size: 20px;
+  }
+
+  .info h4 {
+    font-size: 20px;
+  }
+
+  .info p {
+    font-size: 16px;
+  }
+
+  .download .info h4 {
+    font-size: 24px;
+  }
+
+  .download .info p {
+    font-size: 18px;
+  }
+}
