@@ -148,7 +148,7 @@ h6 {
   padding-right: 30px;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1024px) {
   #header {
     left: -300px;
   }
@@ -221,7 +221,7 @@ h6 {
   position: fixed;
   right: 15px;
   top: 15px;
-  z-index: 9998;
+  z-index: 9999;
   border: 0;
   font-size: 24px;
   transition: all 0.4s;
@@ -1150,8 +1150,6 @@ section {
     font-size: 18px;
   }
 }
-
-/* Existing styles... */
 
 /* Responsive styles for screens 1024px and greater */
 @media (min-width: 1024px) {
