@@ -215,6 +215,7 @@ h6 {
   align-items: center;
   justify-content: center;
   position: relative;
+  width: 100%;
 }
 
 #hero .hero-container {
@@ -296,8 +297,7 @@ section {
   box-shadow: 0 0 24px rgba(0, 0, 0, 0.12);
 }
 
-.contact i,
-.download i {
+.contact i{
   color: var(--primary);
 }
 
@@ -337,5 +337,8 @@ section {
 
   #hero p {
     font-size: 18px;
+  }
+  #hero {
+    padding-top: 60px;
   }
 }
