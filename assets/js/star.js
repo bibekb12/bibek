@@ -1,99 +1,26 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const canvas = document.querySelector("#star-canvas");
-  const ctx = canvas.getContext("2d");
-  let width = (canvas.width = window.innerWidth);
-  let height = (canvas.height = window.innerHeight);
-  const stars = [];
-  const numStars = 150;
-  const maxDistance = 150;
-  const mouse = { x: width / 2, y: height / 2 };
+  const hero = document.getElementById("hero");
 
-  // Initialize stars
-  for (let i = 0; i < numStars; i++) {
-    stars.push({
-      x: Math.random() * width,
-      y: Math.random() * height,
-      vx: (Math.random() - 0.5) * 1.5,
-      vy: (Math.random() - 0.5) * 1.5,
-      radius: Math.random() * 2 + 1,
-      color: "white",
-    });
-  }
+  if (!hero) return;
 
-  function draw() {
-    ctx.clearRect(0, 0, width, height);
+  // High-quality, eye-catching images (royalty-free)
+  const images = [
+    "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    "https://images.unsplash.com/photo-1521737604893-d14cc237f11d",
+    "https://images.unsplash.com/photo-1531297484001-80022131f5a1",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c"
+  ];
 
-    // Update stars
-    stars.forEach((star) => {
-      star.x += star.vx;
-      star.y += star.vy;
+  const randomImage = images[Math.floor(Math.random() * images.length)];
 
-      if (star.x < 0 || star.x > width) {
-        star.vx *= -1;
-      }
-      if (star.y < 0 || star.y > height) {
-        star.vy *= -1;
-      }
+  hero.style.backgroundImage = `linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(${randomImage}?auto=format&fit=crop&w=1920&q=80)`;
 
-      // Draw star
-      ctx.beginPath();
-      ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
-      ctx.fillStyle = star.color;
-      ctx.fill();
-    });
-
-    // Draw lines between stars and mouse
-    stars.forEach((star) => {
-      const dx = star.x - mouse.x;
-      const dy = star.y - mouse.y;
-      const distance = Math.sqrt(dx * dx + dy * dy);
-
-      if (distance < maxDistance) {
-        ctx.beginPath();
-        ctx.moveTo(star.x, star.y);
-        ctx.lineTo(mouse.x, mouse.y);
-        ctx.strokeStyle = `rgba(255, 255, 255, ${1 - distance / maxDistance})`;
-        ctx.lineWidth = 2; // Make the lines a bit stronger
-        ctx.stroke();
-      }
-    });
-
-    requestAnimationFrame(draw);
-  }
-
-  // Update mouse position
-  canvas.addEventListener("mousemove", (event) => {
-    const rect = canvas.getBoundingClientRect();
-    mouse.x = event.clientX - rect.left;
-    mouse.y = event.clientY - rect.top;
-  });
-
-  // Update mouse position when it enters the canvas
-  canvas.addEventListener("mouseenter", (event) => {
-    const rect = canvas.getBoundingClientRect();
-    mouse.x = event.clientX - rect.left;
-    mouse.y = event.clientY - rect.top;
-  });
-
-  // Update the touch position when it enters the canvas
-  canvas.addEventListener("touchmove", (event) => {
-    const rect = canvas.getBoundingClientRect();
-    mouse.x = event.touches[0].clientX - rect.left;
-    mouse.y = event.touches[0].clientY - rect.top;
-    // event.preventDefault();
-  });
-  //Update the touch position when it enters the canvas
-  canvas.addEventListener("touchstart", (event) => {
-    const rect = canvas.getBoundingClientRect();
-    mouse.x = event.touches[0].clientX - rect.left;
-    mouse.y = event.touches[0].clientY - rect.top;
-  });
-
-  // Resize canvas on window resize
-  window.addEventListener("resize", () => {
-    width = canvas.width = window.innerWidth;
-    height = canvas.height = window.innerHeight;
-  });
-
-  draw();
+  hero.style.backgroundSize = "cover";
+  hero.style.backgroundPosition = "center";
+  hero.style.backgroundRepeat = "no-repeat";
 });
