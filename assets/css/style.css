@@ -11,6 +11,7 @@
   --bg-light: #f5f8fd;
   --border-accent: #1f5297;
   --white: #ffffff;
+  --sidebar-width: 280px;
 }
 
 /* ==========================================================
@@ -499,4 +500,26 @@ section {
 .call-btn:active::after {
   opacity: 1;
   transform: scale(1);
+}
+
+/* ==========================================================
+   HERO CENTER FIX (FINAL)
+========================================================== */
+#hero {
+  margin-left: var(--sidebar-width);
+  width: calc(100% - var(--sidebar-width));
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+/* Mobile & Tablet */
+@media (max-width: 1024px) {
+  #hero {
+    margin-left: 0;
+    width: 100%;
+  }
 }
