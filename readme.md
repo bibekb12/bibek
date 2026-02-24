@@ -1,60 +1,79 @@
-# Bibek Bhandari – Backend Developer 👋
-### Django | .NET | Oracle | MySQL | PostgreSQL | MSSQL
-
-💻 **About Me:**  
-I am a backend developer from Nepal, passionate about building robust and scalable applications. I specialize in Django, .NET Core, and relational databases like Oracle, MySQL, PostgreSQL, and MSSQL. I enjoy writing clean, efficient code and optimizing backend systems.
-
-🌱 Currently improving skills in **API development, cloud deployment, and database optimization**.
+# 👨‍💻 Bibek Bhandari
+### **Senior Backend Engineer & Database Administrator (DBA)**
+> *Architecting scalable backend systems and optimizing mission-critical database environments.*
 
 ---
 
-## 🛠️ **Skills**
+## 💫 About Me
+I am a results-driven **Backend Developer** and **DBA** based in Nepal. I specialize in bridging the gap between high-level application logic and low-level data optimization. My passion lies in building enterprise-grade APIs and ensuring that the data layer is robust, secure, and lightning-fast.
 
-**Languages & Frameworks:**  
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) 
-![Django](https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white) 
-![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=csharp&logoColor=white) 
-![.NET](https://img.shields.io/badge/.NET-512BD4?style=flat&logo=dotnet&logoColor=white)  
-
-**Databases:**  
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white) 
-![Oracle](https://img.shields.io/badge/Oracle-F80000?style=flat&logo=oracle&logoColor=white)  
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)  
-![MSSQL](https://img.shields.io/badge/MSSQL-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white)  
-
-**Tools & Technologies:**  
-- REST APIs, JWT Authentication  
-- Docker, Git, GitHub, CI/CD  
-- Swagger / OpenAPI  
+- 🔭 **Expertise:** Django, .NET Core, and Multi-Platform RDBMS.
+- 🌱 **Learning:** Cloud Infrastructure (AWS/Azure) & Distributed Systems.
+- ⚡ **Goal:** Engineering systems where "Data meets Performance."
 
 ---
 
-## 📂 **Projects**
+## 🛠️ Technical Ecosystem
 
-### 1. **mysiteDemo (Django)**  
-- **Description:** Demo backend project using Django for learning and prototyping.  
-- **Tech:** Python, Django, MySQL  
-- **Repo:** [mysiteDemo](https://github.com/bibekb12/mysiteDemo)  
+### 🗄️ Database Administration & Engineering
+*The core of my technical expertise, focusing on high availability and performance.*
 
-### 2. **SQL_QUERY_DBA (Database Scripts)**  
-- **Description:** Collection of SQL scripts for Oracle, MySQL, PostgreSQL & MSSQL.  
-- **Tech:** SQL, PL/SQL, T-SQL  
-- **Repo:** [SQL_QUERY_DBA](https://github.com/bibekb12/SQL_QUERY_DBA)  
+| Platform | Expertise Level | Key Skills |
+| :--- | :--- | :--- |
+| **Oracle** | Advanced | PL/SQL, Performance Tuning, RMAN |
+| **MSSQL** | Advanced | T-SQL, Stored Procedures, Indexing |
+| **PostgreSQL** | Proficient | JSONB, Query Optimization, VACUUM |
+| **MySQL** | Proficient | Schema Design, InnoDB Optimization |
 
-### 3. **srb (HTML Project)**  
-- **Description:** Frontend demo project using HTML & CSS  
-- **Repo:** [srb](https://github.com/bibekb12/srb)  
+### ⚙️ Backend Development
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
+![.NET](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 
-### 4. **bibek (HTML Templates)**  
-- **Description:** Collection of HTML templates and small web demos  
-- **Repo:** [bibek](https://github.com/bibekb12/bibek)  
+### 🚀 Tools & DevOps
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![REST API](https://img.shields.io/badge/REST_API-orange?style=flat-square)
+![JWT](https://img.shields.io/badge/JWT-black?style=flat-square&logo=jsonwebtokens)
 
 ---
 
-## 🗂️ **Project Architecture Example**
-```mermaid
-flowchart TD
-    A[Client / Frontend] -->|HTTP Requests| B[Backend Server]
-    B --> C[Django / .NET Core API]
-    C --> D[(Oracle / MySQL / PostgreSQL / MSSQL Database)]
-    D -->|SQL Queries| C
+## 💎 DBA Specializations
+*   **Query Optimization:** Reducing latency through advanced indexing and execution plan analysis.
+*   **Data Integrity:** Implementing complex triggers, constraints, and ACID-compliant transactions.
+*   **Migration & ETL:** Seamlessly moving data across heterogeneous database systems.
+*   **Backend Integration:** Efficiently connecting Django and .NET applications to complex data layers.
+
+---
+
+## 📂 Featured Repositories
+
+### 🛠️ [SQL_QUERY_DBA](https://github.com/bibekb12/SQL_QUERY_DBA)
+A comprehensive collection of production-ready SQL scripts for Oracle, MySQL, PostgreSQL, and MSSQL. Perfect for database monitoring and performance tuning.
+
+### 🏦 [Greenloan (Django)](https://github.com/bibekb12/greenloan)
+A specialized backend prototype focusing on financial data processing and secure transaction management using Python/Django.
+
+---
+
+## 📊 Performance Metrics
+<p align="center">
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=bibekb12&theme=transparent" width="48%" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=bibekb12&theme=transparent" width="48%" />
+</p>
+
+<p align="center">
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=bibekb12&theme=transparent" width="48%" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=bibekb12&theme=transparent&utcOffset=5.75" width="48%" />
+</p>
+
+---
+
+## 📫 Connect With Me
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/bibek-bhandari-81542b304)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bibekb12)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:info@bibekbhandari.com.np)
+
+---
+
