@@ -76,4 +76,5 @@ A specialized backend prototype focusing on financial data processing and secure
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:info@bibekbhandari.com.np)
 
 ---
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9444afa5-b128-4d71-8a96-5fed1c8465c4/deploy-status)](https://app.netlify.com/projects/gorgeous-donut-764e34/deploys)
 
